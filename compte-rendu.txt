@@ -1,0 +1,28 @@
+Compte rendu – Projet Tic-Tac-Toe en React
+
+Dans le cadre de mon stage, j’ai réalisé un projet en React : une version interactive du jeu Tic-Tac-Toe (Morpion), inspirée du tutoriel officiel de React. Ce projet m’a permis de découvrir et d’appliquer les bases de la bibliothèque React, tout en consolidant ma compréhension du développement web moderne.
+
+Ce que j’ai compris :
+1) La logique des composants
+J’ai bien compris l’approche modulaire de React, qui repose sur la création de composants. Chaque composant représente une partie de l’interface utilisateur, comme une case (Square), une grille (Board) ou le jeu complet (Game) qui sont les composant que j'ai utiliser pour developer le morpion.
+Les composants peuvent être imbriqués les uns dans les autres, ce qui permet une grande réutilisabilité du code. Par exemple, le composant Game est le parent de Board, qui est lui-même le parent de Square. On déclare donc un composant principale (game) qui représente l'affichage final et on rajoute "export default" avant sa déclaration pour préciser que c'est lui le composant principales de la page.
+
+Cette organisation parent/enfant m’a permis de structurer l’application de façon claire et maintenable.
+
+2) JSX, fonctions et composants
+J’ai compris que le JSX est une syntaxe proche du HTML intégrée au JavaScript, qui permet de créer des éléments React de manière lisible et expressive.
+J’ai aussi bien saisi la différence entre une fonction JavaScript classique et un composant fonctionnel React : le composant retourne du JSX et peut gérer son propre état.
+
+Les difficultés rencontrées
+useState et la gestion de l’état
+Le hook useState est encore un concept un peu abstrait pour moi. Même si j’ai réussi à suivre et appliquer son usage dans le projet (pour savoir quel joueur doit jouer ou stocker les valeurs des cases), je ne suis pas encore totalement à l’aise pour l’utiliser seul dans un projet différent.
+Cela dit, je comprends qu’il permet à un composant de mémoriser une information dans le temps, et de réafficher le composant quand cette information change.
+
+Les props
+J’ai compris que les props permettent de transmettre des données d’un composant parent à un composant enfant, comme des arguments dans une fonction. C’est grâce à cela qu’on peut, par exemple, gérer un clic dans un composant enfant (Square) en appelant une fonction définie dans un composant parent (Board).
+Même si je ne maîtrise pas encore toutes les subtilités, je vois clairement l’utilité des props pour faire circuler l’information dans une application.
+
+Bilan personnel
+Je suis satisfait de ce projet car il m’a permis une première approche interessante de React et de poser des bases solides. Je ne suis perdu sur aucun concept, même si certains sont encore à approfondir.
+Je me sens désormais plus confiant pour entamer des projets dynamiques en React, comme celui qui m’attend dans le cadre de mon stage, où je devrai développer le site web de l’entreprise.
+
